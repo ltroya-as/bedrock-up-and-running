@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b9f39c473732ec12beac22ff69ee2a3",
+    "content-hash": "ee2c3d53b5e7ecc8ac7f0c04dcbf8ea4",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,6 +132,60 @@
                 "zikula"
             ],
             "time": "2020-04-07T06:57:05+00:00"
+        },
+        {
+            "name": "firebase/php-jwt",
+            "version": "v5.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "f42c9110abe98dd6cfe9053c49bc86acc70b2d23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/f42c9110abe98dd6cfe9053c49bc86acc70b2d23",
+                "reference": "f42c9110abe98dd6cfe9053c49bc86acc70b2d23",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 <=9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/firebase/php-jwt/issues",
+                "source": "https://github.com/firebase/php-jwt/tree/v5.2.1"
+            },
+            "time": "2021-02-12T00:02:00+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -637,6 +691,116 @@
             "time": "2020-07-14T19:22:52+00:00"
         },
         {
+            "name": "wp-graphql/wp-graphql-acf",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-graphql/wp-graphql-acf.git",
+                "reference": "2545c2f32ac2d21db271eb5ab5334bc233b42cf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-graphql/wp-graphql-acf/zipball/2545c2f32ac2d21db271eb5ab5334bc233b42cf1",
+                "reference": "2545c2f32ac2d21db271eb5ab5334bc233b42cf1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "lucatume/wp-browser": "^2.2.",
+                "phpcompatibility/phpcompatibility-wp": "^2.0",
+                "wp-coding-standards/wpcs": "^2.1"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "WPGraphQL\\ACF\\": "src/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jasonbahl",
+                    "email": "jasonbahl@mac.com"
+                }
+            ],
+            "description": "Advanced Custom Fields bindings for wp-graphql",
+            "support": {
+                "issues": "https://github.com/wp-graphql/wp-graphql-acf/issues",
+                "source": "https://github.com/wp-graphql/wp-graphql-acf/tree/v0.4.1"
+            },
+            "time": "2021-01-19T21:23:00+00:00"
+        },
+        {
+            "name": "wp-graphql/wp-graphql-jwt-authentication",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-graphql/wp-graphql-jwt-authentication.git",
+                "reference": "7905ab9e3658e6e79be510070b9e7aaf26d47009"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-graphql/wp-graphql-jwt-authentication/zipball/7905ab9e3658e6e79be510070b9e7aaf26d47009",
+                "reference": "7905ab9e3658e6e79be510070b9e7aaf26d47009",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "^5.0"
+            },
+            "require-dev": {
+                "lucatume/wp-browser": ">=2.2.1 <2.2.8"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "WPGraphQL\\JWT_Authentication\\": "src/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "jasonbahl",
+                    "email": "jasonbahl@mac.com"
+                }
+            ],
+            "description": "JWT Authentication for WPGraphQL",
+            "support": {
+                "issues": "https://github.com/wp-graphql/wp-graphql-jwt-authentication/issues",
+                "source": "https://github.com/wp-graphql/wp-graphql-jwt-authentication/tree/master"
+            },
+            "time": "2020-05-04T21:48:10+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/acf-to-rest-api",
+            "version": "3.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-to-rest-api/",
+                "reference": "tags/3.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-to-rest-api.3.3.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-to-rest-api/"
+        },
+        {
             "name": "wpackagist-plugin/advanced-custom-fields",
             "version": "5.9.6",
             "source": {
@@ -653,6 +817,42 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/jwt-authentication-for-wp-rest-api",
+            "version": "1.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jwt-authentication-for-wp-rest-api/",
+                "reference": "tags/1.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jwt-authentication-for-wp-rest-api.1.2.6.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-graphql",
+            "version": "1.3.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-graphql/",
+                "reference": "tags/1.3.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-graphql.1.3.9.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-graphql/"
         },
         {
             "name": "wpackagist-theme/twentytwenty",
